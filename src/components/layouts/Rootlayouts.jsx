@@ -1,9 +1,15 @@
-import React from 'react'
+import { Outlet } from "react-router";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Rootlayouts = () => {
   return (
-    <div>Rootlayouts</div>
-  )
-}
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
 
-export default Rootlayouts
+export default Rootlayouts;
